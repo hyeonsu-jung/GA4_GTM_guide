@@ -16,10 +16,10 @@
     <script src="js/common.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function(){
-            fetch('includes/header-content.html').then(r=>r.text()).then(h=>{ document.getElementById('header').innerHTML=h; });
+            fetch('includes/header.html').then(r=>r.text()).then(h=>{ document.getElementById('header').innerHTML=h; });
             fetch('content/ga-intro-content.html').then(r=>r.text()).then(c=>{ document.getElementById('content').innerHTML=c; });
-            fetch('includes/footer-content.html').then(r=>r.text()).then(f=>{ document.getElementById('footer').innerHTML=f; });
-            fetch('includes/chatbot-content.html').then(r=>r.text()).then(b=>{ document.getElementById('chatbot').innerHTML=b; });
+            fetch('includes/footer.html').then(r=>r.text()).then(f=>{ document.getElementById('footer').innerHTML=f; });
+            fetch('includes/chatbot.html').then(r=>r.text()).then(b=>{ document.getElementById('chatbot').innerHTML=b; });
         });
     </script>
 </body>
