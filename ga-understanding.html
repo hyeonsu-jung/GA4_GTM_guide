@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GA 이해하기 | KT nasmedia GA & GTM 가이드 센터</title>
+    <link rel="stylesheet" href="css/common.css">
+</head>
+<body>
+    <div id="header"></div>
+    <main class="main-content">
+        <div class="content-container"><div id="content"></div></div>
+    </main>
+    <div id="footer"></div>
+    <div id="chatbot"></div>
+    <script src="js/common.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+            fetch('includes/header-content.html').then(r=>r.text()).then(h=>{ document.getElementById('header').innerHTML=h; });
+            fetch('content/ga-understanding-content.html').then(r=>r.text()).then(c=>{ document.getElementById('content').innerHTML=c; });
+            fetch('includes/footer-content.html').then(r=>r.text()).then(f=>{ document.getElementById('footer').innerHTML=f; });
+            fetch('includes/chatbot-content.html').then(r=>r.text()).then(b=>{ document.getElementById('chatbot').innerHTML=b; });
+        });
+    </script>
+</body>
+</html>
