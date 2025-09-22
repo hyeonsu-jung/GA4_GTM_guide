@@ -3,7 +3,7 @@
 /* Hero Section */
 .hero-section {
     background: linear-gradient(135deg, #fff 0%, #f8f9fa 100%);
-    padding: 80px 20px;
+    padding: 60px 20px 40px 20px;
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -93,7 +93,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
-    margin-top: 60px;
+    margin-top: 40px;
 }
 
 .topic-card {
@@ -160,8 +160,8 @@
 /* Stats Section */
 .stats-section {
     background: white;
-    padding: 60px 20px;
-    margin: 80px 0;
+    padding: 40px 20px;
+    margin: 40px 0;
 }
 
 .stats-container {
